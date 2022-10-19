@@ -7,9 +7,9 @@ module.exports = {
 		root: "./",
 		src: {
 			base: "./src",
-			css: "./src/scss",
-			cssExt: "./src/scss/external",
-			cssLogin: "./src/scss/login",
+			css: "./src/css",
+			cssExt: "./src/css/external",
+			cssLogin: "./src/css/login",
 			js: "./src/js",
 			jsExt: "./src/js/external",
 			img: "./src/img"

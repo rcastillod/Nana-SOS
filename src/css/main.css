@@ -1,0 +1,55 @@
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+header {
+  @apply absolute w-full left-0 top-0 z-10;
+}
+header .top-bar {
+  @apply backdrop-blur-md bg-white/50;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  COMPONENTS                                */
+/* -------------------------------------------------------------------------- */
+.social-list {
+  @apply ml-auto;
+}
+.social-list ul {
+  @apply flex gap-5;
+}
+.social-list ul li {
+  @apply rounded-full h-8 w-8 bg-secondary;
+}
+.social-list ul li > a {
+  @apply h-full w-full flex items-center justify-center rounded-full;
+}
+.social-list ul li > a:hover {
+  @apply bg-font text-white;
+}
+
+.hero .elementor-widget-wrap {
+  padding: 0 !important;
+}
+.hero .elementor-element,
+.hero .elementor-widget-container,
+.hero .elementor-shortcode,
+.hero .hero-wrapper {
+  @apply h-full;
+}
+
+.hero-slide {
+  background-image: url("http://nanasos.local/wp-content/uploads/2022/10/bg-hero.png");
+  @apply bg-contain bg-no-repeat bg-right;
+}
+
+.hero-slide__content .hero-slide__title {
+  font-size: clamp(3rem, 5vw, 5.3rem);
+  line-height: 1;
+}
+
+.hero-slide__image img {
+  -webkit-clip-path: url(#mask);
+  clip-path: url(#mask);
+  object-fit: cover;
+  width: 100%;
+}
