@@ -16,6 +16,7 @@ if (!defined('ABSPATH')) exit;
 // llamado a funciones en carpeta "inc"
 $file_includes = array(
 	'/enqueue.php',
+	'/extras.php',
 	'/admin-content.php',
 	'/shortcodes.php',
 );

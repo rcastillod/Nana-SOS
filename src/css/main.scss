@@ -1,8 +1,17 @@
 /* -------------------------------------------------------------------------- */
+/*                                   GLOBAL                                   */
+/* -------------------------------------------------------------------------- */
+body {
+  @apply bg-body-bg
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
 header {
-  @apply absolute w-full left-0 top-0 z-10;
+  @media (min-width: 768px) {
+    @apply absolute w-full left-0 top-0 z-10;
+  }
 
   .top-bar {
     @apply backdrop-blur-md bg-white/50
@@ -42,30 +51,121 @@ header {
     padding: 0 !important;
   }
 
+  .elementor-container,
   .elementor-element,
   .elementor-widget-container,
-  .elementor-shortcode,
-  .hero-wrapper {
+  .elementor-shortcode {
     @apply h-full;
   }
 }
 
 .hero-slide {
-  background-image: url('http://nanasos.local/wp-content/uploads/2022/10/bg-hero.png');
   @apply bg-contain bg-no-repeat bg-right;
 }
 
 .hero-slide__content {
+
   .hero-slide__title {
+    @apply text-font;
     font-size: clamp(3rem, 5vw, 5.3rem);
+    line-height: 1;
+    transition-delay: 0.2s;
+  }
+
+  .hero-slide__excerpt {
+    transition-delay: 0.3s;
+  }
+
+  .hero-slide__link {
+    @apply font-bold;
+    font-family: 'Mulish', sans-serif;
     line-height: 1;
   }
 
 }
 
+.hero-slide__image-bg img {
+  @apply h-[1100px] w-[800px] object-cover rounded-[400px];
+}
+
 .hero-slide__image img {
+  @apply rounded-2xl;
   -webkit-clip-path: url(#mask);
   clip-path: url(#mask);
   object-fit: cover;
   width: 100%;
+}
+
+// Swiper Arrow
+.hero-slide__arrow {
+  @apply absolute right-8 bottom-5 z-10 items-center gap-4;
+
+  svg {
+    @apply w-7 stroke-font;
+  }
+
+  .swiper-button {
+    @apply border border-font rounded-full w-11 h-11 flex items-center justify-center cursor-pointer;
+    @apply transition-all duration-300 ease-in-out;
+
+    &:hover {
+      @apply bg-primary text-white border-primary;
+
+      svg {
+        @apply stroke-white;
+      }
+    }
+  }
+
+  .swiper-prev-button {
+
+    svg {
+      transform: rotate(-180deg);
+    }
+
+  }
+}
+
+// Swiper Anmimation
+.swiper-slide {
+  opacity: 0 !important;
+  transition: 0.4s;
+
+  &-active {
+    opacity: 1 !important;
+  }
+}
+
+.swiper-slide .hero-slide__content>* {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition-duration: 0.8s;
+}
+
+.swiper-slide-active .hero-slide__content>* {
+  transform: none;
+  opacity: 1;
+}
+
+.swiper-slide .hero-slide__image-bg img {
+  transition-duration: 0.6s;
+  opacity: 0;
+  object-position: 80%;
+}
+
+.swiper-slide-active .hero-slide__image-bg img {
+  opacity: 1;
+  transform: none;
+  object-position: 50%;
+}
+
+.swiper-slide .hero-slide__image img {
+  transition-duration: 0.8s;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.swiper-slide-active .hero-slide__image img {
+  opacity: 1;
+  transform: scale(1.2);
 }

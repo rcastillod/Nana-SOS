@@ -1,12 +1,16 @@
 var swiper = new Swiper("#heroSlider", {
-  loop: false,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-next-button",
+    prevEl: ".swiper-prev-button"
+  },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    type: "fraction",
   },
-  autoplay: false,
-  // autoplay: {
-  //   delay: 10000,
-  //   disableOnInteraction: true,
-  // },
+  effect: "fade",
+  autoplay: {
+    delay: 6500,
+    disableOnInteraction: true,
+  },
 });
