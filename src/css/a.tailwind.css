@@ -3,14 +3,14 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --ast-global-color-0: 237deg 54% 60%;
-    --ast-global-color-1: 237deg 41% 19%;
-    --ast-global-color-2: 237deg 41% 19%;
-    --ast-global-color-3: 240deg 12% 27%;
-    --ast-global-color-4: 233deg 44% 96%;
-    --ast-global-color-5: 0deg 0% 100%;
-    --ast-global-color-6: 177deg 59% 62%;
-    --ast-global-color-7: 237deg 8% 50%;
-    --ast-global-color-8: 237deg 53% 56%;
+    --ast-global-color-0: hsl(237deg 54% 60%);
+    --ast-global-color-1: hsl(237deg 41% 19%);
+    --ast-global-color-2: hsl(237deg 41% 19%);
+    --ast-global-color-3: hsl(240deg 12% 27%);
+    --ast-global-color-4: hsl(233deg 44% 96%);
+    --ast-global-color-5: hsl(0deg 0% 100%);
+    --ast-global-color-6: hsl(177deg 59% 62%);
+    --ast-global-color-7: hsl(237deg 8% 50%);
+    --ast-global-color-8: hsl(237deg 53% 56%);
   }
 }
