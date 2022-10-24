@@ -27,7 +27,7 @@ body {
   @apply ml-auto;
 
   ul {
-    @apply flex gap-5;
+    @apply flex gap-3;
 
     li {
       @apply rounded-full h-8 w-8 bg-secondary;
@@ -168,4 +168,41 @@ body {
 .swiper-slide-active .hero-slide__image img {
   opacity: 1;
   transform: scale(1.2);
+}
+
+// Service Card
+.service-card .elementor-widget .elementor-icon-list-item {
+  align-items: flex-start;
+
+  .elementor-icon-list-icon {
+    margin-top: .3125rem;
+  }
+}
+
+// Gold Gradient
+.gold>.elementor-widget-container {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+// Contact form
+.wpcf7-form {
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    @apply rounded-lg
+  }
+
+  // Error message alert
+  .wpcf7-not-valid-tip {
+    @apply text-sm text-primary font-medium
+  }
+
+  .wpcf7-response-output {
+    @apply m-0 bg-font text-sm text-white rounded-lg;
+    border: none !important;
+    margin: 0 !important;
+    padding-block: .3125rem;
+  }
 }
