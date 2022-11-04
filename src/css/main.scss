@@ -70,6 +70,10 @@ body {
     font-size: clamp(2rem, 3vw, 2.4rem);
     line-height: 1;
     transition-delay: 0.2s;
+
+    strong {
+      @apply text-primary;
+    }
   }
 
   .hero-slide__excerpt {

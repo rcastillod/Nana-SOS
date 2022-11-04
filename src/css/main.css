@@ -57,6 +57,9 @@ body {
   line-height: 1;
   transition-delay: 0.2s;
 }
+.hero-slide__content .hero-slide__title strong {
+  @apply text-primary;
+}
 .hero-slide__content .hero-slide__excerpt {
   transition-delay: 0.3s;
 }
