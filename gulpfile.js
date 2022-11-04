@@ -61,6 +61,7 @@ function devStyles() {
       require('autoprefixer'),
     ]))
     .pipe(concat({ path: 'style.css' }))
+    .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(dest(options.paths.dist.css));
 }
 

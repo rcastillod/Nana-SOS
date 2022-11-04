@@ -53,7 +53,7 @@ body {
 
 .hero-slide__content .hero-slide__title {
   @apply text-font;
-  font-size: clamp(3rem, 5vw, 5.3rem);
+  font-size: clamp(2rem, 3vw, 2.4rem);
   line-height: 1;
   transition-delay: 0.2s;
 }
@@ -72,9 +72,6 @@ body {
 
 .hero-slide__image img {
   @apply rounded-2xl;
-  -webkit-clip-path: url(#mask);
-  clip-path: url(#mask);
-  object-fit: cover;
   width: 100%;
 }
 
@@ -137,13 +134,13 @@ body {
 
 .swiper-slide-active .hero-slide__image img {
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
-.service-card .elementor-widget .elementor-icon-list-item {
+.icon-list.elementor-widget .elementor-icon-list-item {
   align-items: flex-start;
 }
-.service-card .elementor-widget .elementor-icon-list-item .elementor-icon-list-icon {
+.icon-list.elementor-widget .elementor-icon-list-item .elementor-icon-list-icon {
   margin-top: 0.3125rem;
 }
 
