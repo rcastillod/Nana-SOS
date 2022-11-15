@@ -207,3 +207,23 @@ body {
     padding-block: .3125rem;
   }
 }
+
+/** Whatsapp Link */
+.footer-wrapper {
+  position: relative;
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  z-index: 2;
+
+  img {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, .25));
+  }
+}
+
+.whatsapp-link:hover {
+  transform: translateY(-5px);
+}

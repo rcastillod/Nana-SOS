@@ -28,7 +28,7 @@ function nanasos_heroslider_sht()
                         <div class="hero-slide__content col-span-full md:col-start-1 md:col-end-7 lg:col-start-2 lg:col-end-7 xl:col-start-3 xl:col-end-7 row-span-full lg:pr-5 2xl:py-24 2xl:pl-16 2xl:pr-11 z-10">
                             <h2 class="hero-slide__title"><?php echo $title; ?></h2>
                             <div class="hero-slide__excerpt md:pr-28"><?php echo $content; ?></div>
-                            <div class="hero-slide__links flex gap-5 mt-10">
+                            <div class="hero-slide__links flex md:gap-5 mt-10">
                                 <?php
                                 if ($link) :
                                     $link_url = $link['url'];
@@ -71,7 +71,7 @@ function nanasos_heroslider_sht()
                     </svg>
                 </div>
             </div>
-            <div class="swiper-pagination hero-pagination"></div>
+            <div class="hero-slide__pagination hidden md:block swiper-pagination hero-pagination"></div>
         </div>
 
 
