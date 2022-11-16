@@ -186,6 +186,12 @@ body {
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
+// Price List
+.column-price .elementor-price-list .elementor-price-list-header {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
 // Contact form
 .wpcf7-form {
 
