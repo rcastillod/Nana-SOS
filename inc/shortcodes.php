@@ -24,7 +24,7 @@ function nanasos_heroslider_sht()
                     $link2     = get_sub_field('link_2', 'option');
                     $color     = get_sub_field('paleta_color', 'option');
                 ?>
-                    <div class="swiper-slide hero-slide grid grid-cols-12 items-center px-10 lg:p-0">
+                    <div class="swiper-slide hero-slide md:grid grid-cols-12 items-center px-10 lg:p-0">
                         <div class="hero-slide__content col-span-full md:col-start-1 md:col-end-7 lg:col-start-2 lg:col-end-7 xl:col-start-3 xl:col-end-7 row-span-full lg:pr-5 2xl:py-24 2xl:pl-16 2xl:pr-11 z-10">
                             <h2 class="hero-slide__title"><?php echo $title; ?></h2>
                             <div class="hero-slide__excerpt md:pr-28"><?php echo $content; ?></div>
@@ -52,7 +52,7 @@ function nanasos_heroslider_sht()
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="hero-slide__image hidden md:block col-span-full col-start-4 col-end-12 md:col-start-7 md:col-end-13 lg:col-start-7 lg:col-end-12 xl:col-start-7 xl:col-end-11 row-span-full">
+                        <div class="hero-slide__image col-span-full col-start-1 col-end-12 md:col-start-7 md:col-end-13 lg:col-start-7 lg:col-end-12 xl:col-start-7 xl:col-end-11 row-span-full">
                             <img src="<?php echo $image; ?>" alt="">
                         </div>
                         <div class="hero-slide__image-bg absolute hidden md:block md:-top-80 md:-right-52 xl:-top-48 xl:right-0 transform rotate-[30deg] -z-10"><img src="<?php echo $bgImage; ?>" alt=""></div>
