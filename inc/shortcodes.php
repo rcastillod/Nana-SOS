@@ -11,7 +11,7 @@ function nanasos_heroslider_sht()
 
     if (have_rows('hero_slider', 'option')) { ?>
         <!-- Hero SLider -->
-        <div id="heroSlider" class="swiper hero-wrapper h-96 md:h-full">
+        <div id="heroSlider" class="swiper hero-wrapper md:h-full">
             <div class="swiper-wrapper">
                 <?php
                 while (have_rows('hero_slider', 'option')) : the_row();
